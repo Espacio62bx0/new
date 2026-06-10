@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colonización Espacial</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#020617,#101f3f);
+    color:white;
+}
+
+header{
+    height:60vh;
+    background:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1400') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:3rem;
+    background:rgba(0,0,0,.6);
+    padding:20px;
+    border-radius:20px;
+}
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.box{
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:25px;
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    color:#67c1ff;
+    margin-bottom:15px;
+}
+
+p{
+    line-height:1.8;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+footer{
+    background:#01040d;
+    text-align:center;
+    padding:20px;
+}
+
+a{
+    color:#67c1ff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>COLONIZACIÓN ESPACIAL</h1>
+</header>
+
+<section>
+
+<div class="box">
+    <h2>Vida en Marte</h2>
+    <p>
+        Las futuras colonias marcianas dependerán de sistemas automáticos
+        de IA para producir alimentos, energía y oxígeno.
+    </p>
+</div>
+
+<div class="box">
+    <h2>Hábitats Inteligentes</h2>
+    <p>
+        Las bases espaciales estarán equipadas con sensores inteligentes
+        que regularán temperatura, presión y recursos.
+    </p>
+</div>
+
+<div class="box">
+    <h2>Objetivo Futuro</h2>
+    <p>
+        La exploración espacial busca convertir a la humanidad
+        en una especie multiplanetaria.
+    </p>
+</div>
+
+<div class="galeria">
+    <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=1000">
+    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000">
+    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000">
+</div>
+
+</section>
+
+<footer>
+    <p><a href="index.html">⬅ Volver al inicio</a></p>
+</footer>
+
+</body>
+</html>

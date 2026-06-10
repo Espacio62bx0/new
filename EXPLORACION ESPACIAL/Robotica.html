@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robótica Espacial</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#050816,#0d1b3d);
+    color:white;
+}
+
+header{
+    height:60vh;
+    background:url('https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=1400') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:3rem;
+    background:rgba(0,0,0,.6);
+    padding:20px;
+    border-radius:20px;
+}
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:25px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    color:#67c1ff;
+    margin-bottom:15px;
+}
+
+p{
+    line-height:1.8;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+footer{
+    background:#01040d;
+    text-align:center;
+    padding:20px;
+}
+
+a{
+    color:#67c1ff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ROBÓTICA ESPACIAL</h1>
+</header>
+
+<section>
+
+<div class="card">
+    <h2>Exploración Autónoma</h2>
+    <p>
+        Los robots espaciales utilizan Inteligencia Artificial para explorar
+        planetas, recolectar muestras y analizar información sin intervención humana.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Rovers en Marte</h2>
+    <p>
+        Vehículos como Perseverance y Curiosity utilizan sistemas inteligentes
+        para desplazarse, evitar obstáculos y tomar decisiones en tiempo real.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Futuro de la Robótica</h2>
+    <p>
+        La robótica avanzada permitirá construir bases espaciales automáticas,
+        reparar satélites y ayudar en futuras misiones a Marte y la Luna.
+    </p>
+</div>
+
+<div class="galeria">
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1000">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000">
+    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1000">
+</div>
+
+</section>
+
+<footer>
+    <p><a href="index.html">⬅ Volver al inicio</a></p>
+</footer>
+
+</body>
+</html>
