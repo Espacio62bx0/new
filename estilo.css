@@ -1,0 +1,121 @@
+:root {
+    --azul-profundo: #020617;
+    --violeta-neon: #8b5cf6;
+    --violeta-dark: #4c1d95;
+    --blanco-puro: #ffffff;
+    --gris-espacial: #94a3b8;
+    --font-titulos: 'Orbitron', sans-serif;
+    --font-cabeceras: 'Rajdhani', sans-serif;
+    --font-cuerpo: 'Open Sans', sans-serif;
+    --font-moderna: 'Exo 2', sans-serif;
+}
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--azul-profundo);
+    color: var(--blanco-puro);
+    font-family: var(--violeta-dark);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--violeta-dark);
+}
+
+h1 {
+    font-family: var(--font-titulos);
+    font-size: 3.5rem;
+    text-shadow: 0 0 30px var(--blanco-puro);
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.subtitle {
+    font-family: var(--font-moderna);
+    font-size: 1.5rem;
+    color: var(--gris-espacial);
+}
+
+section { padding: 100px 10%; }
+
+h2 {
+    font-family: var(--font-cabeceras);
+    font-size: 3rem;
+    color: var(--blanco-puro);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border-left: 5px solid var(--blanco-puro);
+    padding-left: 20px;
+}
+
+
+.grid-investigacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-tech {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.card-tech:hover {
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-10px);
+    border-color: var(--blanco-puro);
+}
+
+.icon { font-size: 3rem; margin-bottom: 20px; }
+
+.seccion-detalle {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.seccion-detalle.reverse { flex-direction: row-reverse; }
+
+.txt { flex: 1; }
+.txt h3 { font-family: var(--font-cabeceras); font-size: 2rem; color: var(--blanco-puro); margin-bottom: 15px; }
+
+.visual-element { flex: 1; text-align: center; }
+.visual-element img, .vid-mini {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+}
+
+/* TAGS DE DESAFÍOS */
+.grid-tags { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+.tag {
+    padding: 15px 30px;
+    background: var(--violeta-dark);
+    border-radius: 50px;
+    font-family: var(--font-moderna);
+    font-weight: bold;
+    cursor: default;
+    transition: 0.3s;
+}
+.tag:hover { background: var(--blanco-puro); transform: scale(1.1); }
+
+/* FOOTER */
+footer {
+    background: #000;
+    padding: 80px 10%;
+    border-top: 2px solid var(--violeta-dark);
+}
+
+.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
+.cecyte { margin-top: 20px; color: var(--blanco-puro); font-weight: bold; }
+ul { list-style: none; }
